@@ -15,7 +15,7 @@ const Menu = () => {
         {menuItems.map((item) => (
           <li key={item.id} className="w-100">
             <Link
-              to={`/#${item.title}`}
+              to={`#${item.title}`}
               title={item.title}
               className="text-color p-3 "
             >
