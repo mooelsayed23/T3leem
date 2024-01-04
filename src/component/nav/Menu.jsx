@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   const menuItems = [
@@ -13,13 +14,13 @@ const Menu = () => {
       <ul className="d-flex list-unstyled mx-auto justify-content-center dropdown z-3 ">
         {menuItems.map((item) => (
           <li key={item.id} className="w-100">
-            <a
-              href={`/#${item.title}`}
+            <Link
+              to={`/#${item.title}`}
               title={item.title}
               className="text-color p-3 "
             >
               {item.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
