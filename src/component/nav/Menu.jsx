@@ -19,7 +19,7 @@ const Menu = () => {
               title={item.title}
               className="text-color p-3 "
             >
-              {item.title}
+              {item.title} a
             </Link>
           </li>
         ))}
