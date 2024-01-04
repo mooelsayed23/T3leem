@@ -1,0 +1,63 @@
+/* في styles.css */
+
+.us-container.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.us-container.container h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.us-container.container p {
+    line-height: 1.8;
+    color: #343a40;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    /* زيادة التباعد بين الفقرات */
+}
+
+.us-container.container .card {
+    max-width: 300px !important;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.us-container.container .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.us-container.container h5 {
+    margin-bottom: 15px;
+    /* زيادة التباعد بين العناوين والنصوص */
+}
+
+.us-container.container .card-title {
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.us-container.container .card-text {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* تعزيز تجربة القراءة */
+.us-container.container .container p,
+.us-container.container .card-text {
+    text-align: justify;
+}
+
+/* تحسين الهوفر على البطاقات */
+.us-container.container .card:hover .card-title {
+    color: #0056b3;
+    /* تغيير لون العنوان عند التحويل */
+}

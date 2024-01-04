@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+
+.side-contaner a {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    margin-bottom: 1px;
+}
+
+.side-contaner ul li a:hover {
+    background-color: #E9F6FB !important;
+}
+
+.side-contaner ul li:first-child {
+    background-color: #E9F6FB !important;
+
+}

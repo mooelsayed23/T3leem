@@ -1,0 +1,36 @@
+@media (max-width: 1024.98px) {
+    .slick-arrow {
+        display: none !important;
+    }
+}
+
+main .card {
+    margin: 0 10px !important;
+}
+
+main .slick-prev {
+    display: none !important;
+}
+
+main .slick-slider button {
+    width: 40px;
+    height: 40px;
+}
+
+main div {
+    margin: 20px 0 !important;
+}
+
+main h1 {
+    padding-right: 23px;
+}
+
+main .slick-slider button::before {
+    width: 25px !important;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+}

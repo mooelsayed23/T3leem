@@ -1,0 +1,22 @@
+.card {
+    box-shadow: 1px -1px 0px 0px #eee, 1px 1px 2px 0px #eee !important;
+
+    overflow: hidden !important;
+    background-color: #FFF !important;
+    border: 0 !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    -ms-border-radius: 12px !important;
+    -o-border-radius: 12px !important;
+    border-radius: 12px !important;
+    border-left: solid 1px #eee !important;
+
+}
+
+.card img {
+    height: 115px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: middle;
+}
