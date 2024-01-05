@@ -34,6 +34,14 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="ContactUs" element={<ContactUsPage />} />
         <Route
+          path="/*"
+          element={
+            <>
+              <SimpleSlider /> <Main />
+            </>
+          }
+        />
+        <Route
           path="*"
           element={
             <>
