@@ -44,7 +44,7 @@ export default function SimpleSlider() {
                 <section className="position-absolute text-center h-100">
                   <h1>{slide.title}</h1>
                   <p>{slide.content}</p>
-                  <a href={slide.link}>اختر مسارك التعليمى</a>
+                  <p> اختر مسارك التعليمى الان</p>
                 </section>
               </div>
             ))}
