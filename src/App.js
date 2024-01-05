@@ -8,7 +8,13 @@ import Menu from "./component/nav/Menu";
 import Product from "./component/product/Product";
 import SimpleSlider from "./component/Slider/Slider";
 import { Routes, Route } from "react-router-dom";
+import Path from "./component/Path/Path";
 function App() {
+  useEffect(() => {
+    if (window.location.pathname === "/T3leem") {
+      window.location.href = "/";
+    }
+  }, []);
   return (
     <>
       <Header />
@@ -25,9 +31,10 @@ function App() {
           }
         />
 
-        <Route path="/course/:id" element={<Product />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/ContactUs" element={<ContactUsPage />} />
+        <Route path="course/:id" element={<Product />} />
+        <Route path="path/:value" element={<Path />} />
+        <Route path="about" element={<About />} />
+        <Route path="ContactUs" element={<ContactUsPage />} />
         <Route
           path="*"
           element={
