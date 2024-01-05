@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "./component/about/About";
 import ContactUsPage from "./component/connectUs/ConnectUs";
 import Footer from "./component/footer/Footer";
@@ -8,6 +9,11 @@ import Product from "./component/product/Product";
 import SimpleSlider from "./component/Slider/Slider";
 import { Routes, Route } from "react-router-dom";
 function App() {
+  useEffect(() => {
+    if (window.location.pathname === "/T3leem") {
+      window.location.href = "/";
+    }
+  }, []);
   return (
     <>
       <Header />
