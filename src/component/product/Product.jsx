@@ -47,7 +47,9 @@ function Product() {
               </span>
               <p>{description}</p>
               <form id="qty">
-                <button type="submit">شراء الكورس</button>
+                <button onClick={(event) => event.preventDefault()}>
+                  شراء الكورس
+                </button>
               </form>
               <ul>
                 <li>
