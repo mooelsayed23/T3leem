@@ -10,7 +10,7 @@ import SimpleSlider from "./component/Slider/Slider";
 import { Routes, Route } from "react-router-dom";
 function App() {
   useEffect(() => {
-    if (window.location.pathname === "/T3leem") {
+    if (window.location.pathname === "/T3leem/") {
       window.location.href = "/";
     }
   }, []);
