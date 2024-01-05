@@ -25,7 +25,7 @@ function Product() {
           <div className="row">
             <div className="col-lg-12 border-bottom">
               <h3>
-                <Link to="/path/">{category}</Link> /<small>{title}</small>
+                <Link to={`/path/${category}`}>{category}</Link> /<small>{title}</small>
               </h3>
             </div>
           </div>
