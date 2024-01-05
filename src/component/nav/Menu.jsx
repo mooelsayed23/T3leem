@@ -9,18 +9,19 @@ const Menu = () => {
     { id: 4, title: "تعلم اللغات" },
     { id: 5, title: "التسويق وفن البيع" },
   ];
+
   return (
     <>
-      <ul className="d-flex list-unstyled mx-auto justify-content-center dropdown z-3 ">
+      <ul className="d-flex list-unstyled mx-auto justify-content-center dropdown z-3">
         {menuItems.map((item) => (
           <li key={item.id} className="w-100">
-            <a
-              href={`/#${item.title}`}
+            <Link
+              to={`path/${item.title}`}
               title={item.title}
-              className="text-color p-3 "
+              className="text-color p-3"
             >
               {item.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
