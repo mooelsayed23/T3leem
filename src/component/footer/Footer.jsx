@@ -26,7 +26,7 @@ function Footer() {
           <div className="container p-4 pb-0 ">
             <section className="text-center">
               <div className="row">
-                <div className="col-lg-12 col-md-6 mb-4 mb-md-0 justify-content-center ">
+                <div className="">
                   <h5>استمتع برحلتك التعليمية!</h5>
 
                   <p className="mb-0 p-0">
