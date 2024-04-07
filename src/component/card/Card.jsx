@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Card({ title, img, linkTitle, id }) {
   return (
     <>
-      <div className="col mx-1 card" dir="rtl">
+      <div className="col card" dir="rtl">
         <img src={img} className="card-img-top" alt={title} />
         <div className="card-body  bg-white">
           <h5 className="card-title">{title}</h5>
