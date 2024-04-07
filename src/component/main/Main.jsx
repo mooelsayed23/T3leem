@@ -45,8 +45,8 @@ const CategorySlider = ({ categoryTitle }) => {
   };
 
   return (
-    <div>
-      <h1 id={categoryTitle}>{categoryTitle}</h1>
+    <div className="my-0 px-5 ">
+      <h2 id={categoryTitle}>{categoryTitle}</h2>
       <Slider {...settings}>
         {categoryData.map((d) => (
           <Card
