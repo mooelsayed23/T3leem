@@ -1,3 +1,7 @@
+Aside{
+    min-width: 200px !important;    
+}
+
 ul {
     list-style: none;
 }
