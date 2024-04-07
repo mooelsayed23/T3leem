@@ -75,7 +75,7 @@ const Header = () => {
     <>
       <header className="header text-nowrap position-relative z-3 w-100 px-sm-5  border-bottom" dir="rtl">
         <div className="container-fluid ">
-          <div className=" all-head d-flex  align-items-center justify-content-between flex-nowrap container-fluid">
+          <div className=" all-head d-flex  align-items-center justify-content-between flex-nowrap px-1">
             {renderMobileMenu()}
             {renderLogo()}
             {!showSearch && (
