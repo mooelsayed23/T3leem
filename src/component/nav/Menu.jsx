@@ -12,13 +12,13 @@ const Menu = () => {
 
   return (
     <>
-      <ul className="d-flex list-unstyled mx-auto justify-content-center dropdown z-3">
+      <ul className="d-flex gap-4 text-nowrap flex-nowrap overflow-x-auto py-3 px-3  " >
         {menuItems.map((item) => (
-          <li key={item.id} className="w-100">
+          <li key={item.id}>
             <Link
               to={`path/${item.title}`}
               title={item.title}
-              className="text-color p-3"
+              className="text-color"
             >
               {item.title}
             </Link>
