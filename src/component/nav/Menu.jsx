@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./Menu.css";
 const Menu = () => {
   const menuItems = [
     { id: 1, title: "تطوير الذات" },
@@ -11,21 +11,23 @@ const Menu = () => {
   ];
 
   return (
-    <>
-      <ul className="d-flex gap-4 text-nowrap flex-nowrap overflow-x-auto py-3 px-3  " >
-        {menuItems.map((item) => (
-          <li key={item.id}>
-            <Link
-              to={`path/${item.title}`}
-              title={item.title}
-              className="text-color"
-            >
-              {item.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </>
+    
+      <div className="links position-relative z-2 mx-auto ">
+        <ul className="d-flex gap-4 text-nowrap flex-nowrap overflow-x-auto py-3 px-3 px-lg-1   ">
+          {menuItems.map((item) => (
+            <li key={item.id}>
+              <Link
+                to={`path/${item.title}`}
+                title={item.title}
+                className="text-color"
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    
   );
 };
 

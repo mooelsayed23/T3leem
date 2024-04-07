@@ -1,9 +1,48 @@
 .S-contener {
-    width: 89%;
+    width: 89%; /* يجب أن تكون "S-contener" بدلاً من "S-contener" */
     background-image: url("./img/9.jpg");
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative; /* إضافة خاصية position لـ .S-contener لتمكين استخدام الوضع المطلق للكرات */
+    overflow: hidden;
+}
+
+.S-contener::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.2; /* يجب أن يكون 0.2 بدلاً من 20% لتحديد الشفافية بشكل صحيح */
+    background-color: #fffb00;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.S-contener::before {
+    content: '';
+    position: absolute;
+    bottom: -300px;
+    right: -300px;
+    width: 600px;
+    height: 600px;
+    opacity: 0.2; /* يجب أن يكون 0.2 بدلاً من 20% لتحديد الشفافية بشكل صحيح */
+    background-color: #fffb00;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.Slider-section::before {
+    content: '';
+    position: absolute;
+    bottom: -225px;
+    right: -225px;
+    width: 4000px;
+    height: 450px;
+    opacity: 0.3;
+    background-color: #020a1e;
+    transition: all 0.3s ease;
+    border-radius: 50%;
 }
 
 @media (max-width: 767.98px) {

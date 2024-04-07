@@ -18,9 +18,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="links position-relative z-2 w-100" >
-        <Menu />
-      </div>
+      <Menu />
       <Routes>
         <Route
           path="/"

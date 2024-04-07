@@ -1,8 +1,10 @@
-import React from "react";
+import React, {  useRef } from "react";
 import Slider from "react-slick";
 import "./Slider.css";
 
 export default function SimpleSlider() {
+  const containerRef = useRef(null); // Ref to the container element
+
   const settings = {
     dots: false,
     infinite: true,
@@ -34,9 +36,11 @@ export default function SimpleSlider() {
     },
   ];
 
+
+
   return (
     <div className="S-contener mx-auto rounded-2 position-relative z-1">
-      <div className="Slider-section">
+      <div className="Slider-section position-relative " ref={containerRef}>
         <div className="sliderInfo">
           <Slider {...settings}>
             {slidesData.map((slide, index) => (
