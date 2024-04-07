@@ -1,0 +1,4 @@
+.course .card{
+    flex-shrink: 0;
+    min-width: 220px !important;
+}

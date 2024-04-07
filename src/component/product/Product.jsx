@@ -141,7 +141,7 @@ function Product() {
                 <Link to="/">عرض الكل</Link>
               </div>
             </div>
-            <div className="col-12 d-flex justify-content-evenly mt-4">
+            <div className="course col-12 d-flex justify-content-evenly mt-4 overflow-x-auto text-nowrap gap-3 ">
               {filteredData.map((d) => (
                 <Card
                   title={d.title}
