@@ -7,7 +7,7 @@ function Card({ title, img, linkTitle, id }) {
       <div className="col card" dir="rtl">
         <img src={img} className="card-img-top" alt={title} />
         <div className="card-body  bg-white">
-          <h5 className="card-title">{title}</h5>
+          <h5 className="card-title  text-truncate">{title}</h5>
           {linkTitle && (
             <Link to={`/course/${id}`} className="btn btn-primary">
               {linkTitle}
