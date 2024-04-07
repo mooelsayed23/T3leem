@@ -66,17 +66,17 @@ const CategorySlider = ({ categoryTitle }) => {
 const Main = () => {
   return (
     <div
-      className="row container-fluid   mx-auto my-5 flex-row-reverse"
+      className="mainContaner d-flex mx-auto my-5 flex-row-reverse"
       dir="rtl"
     >
-      <main className="col-lg-9 col-12 ">
+      <main className="col-12 col-lg-10">
         <CategorySlider categoryTitle="تطوير الذات" />
         <CategorySlider categoryTitle="التصميم و الأعلام" />
         <CategorySlider categoryTitle="التكنولوجيا" />
         <CategorySlider categoryTitle="تعلم اللغات" />
         <CategorySlider categoryTitle="التسويق وفن البيع" />
       </main>
-      <aside className="col-lg-3 d-none d-lg-block ">
+      <aside className="col-lg-2 d-none d-lg-block ">
         <Aside />
       </aside>
     </div>

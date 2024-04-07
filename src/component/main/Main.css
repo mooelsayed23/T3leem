@@ -3,7 +3,9 @@
         display: none !important;
     }
 }
-
+.mainContaner{
+    width: 89% !important;
+}
 main .card {
     margin: 0 10px !important;
 }

@@ -6,7 +6,7 @@ function Aside() {
   return (
     <>
       <b className="fs-4">فئات</b>
-      <div className="side-contaner w-100 border-end pe-2  pt-1">
+      <div className="side-contaner w-100 border p-1 ">
         <ul>
           <li className="sid-li ">
             <Link to="/" className="btn w-100 text-end sid-a rounded-0 ">
