@@ -5,14 +5,14 @@ import Card from "../card/Card";
 function Path() {
   const thepath = useParams();
   return (
-    <div className="bg-light rounded-sm-5 p-sm-5 my-sm-5 w-sm-75 mx-auto ">
+    <div className=" bg-light rounded-sm-5 p-sm-5 my-sm-5 w-sm-50 mx-auto">
       <h1 className="text-success py-4 pe-2 ">{thepath.value}</h1>
       <div className=" d-flex flex-wrap">
         {Data.map(
           (e) =>
             e.category === thepath.value && (
               <div
-                className={`col-12 col-lg-3 col-md-4 col-sm-6 mb-4 px-2 `}
+                className={`col-12 col-lg-3 col-md-4 col-sm-6 mb-4 px-3` }
                 key={e.id}
               >
                 <Card
@@ -30,10 +30,7 @@ function Path() {
         {Data.map(
           (e) =>
             e.category !== thepath.value && (
-              <div
-                className={`col-12 col-lg-3 col-md-4 col-sm-6 mb-4 px-2 `}
-                key={e.id}
-              >
+              <div className="col-12 col-sm-4 mb-4 px-3 " key={e.id}>
                 <Card
                   img={e.img}
                   title={e.title}
