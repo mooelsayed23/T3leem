@@ -24,7 +24,7 @@ const Header = () => {
 
   const renderMobileMenu = () => (
     <div
-      className="col-1 d-lg-none d-flex ps-0"
+      className=" d-lg-none d-flex ps-0"
       onClick={() => setShowMenu(!showMenu)}
     >
       <CgMenuGridR />
@@ -32,7 +32,7 @@ const Header = () => {
   );
 
   const renderLogo = () => (
-    <div className={`col-2 ${showSearch && "d-none d-md-block"}`}>
+    <div className={` ${showSearch && "d-none d-md-block"}`}>
       <div className="header__logo">
         <Link to="/" title="تَقدم التعليمية" className="text-center">
           تَقدم التعليمية
@@ -43,7 +43,7 @@ const Header = () => {
 
   const renderSearchForm = () => (
     <div
-      className="col-8 d-flex align-items-center home-search position-relative m-0 px-0"
+      className=" d-flex align-items-center home-search position-relative m-0 px-0"
       ref={outsideClickRef}
     >
       <form action="" className="d-flex w-100">
@@ -62,7 +62,7 @@ const Header = () => {
   );
 
   const renderLogin = () => (
-    <div className="col-1">
+    <div className="">
       <div className="header__right">
         <Link to="/" title="icon_profile" className="text-black">
           <CgProfile />
@@ -73,13 +73,13 @@ const Header = () => {
 
   return (
     <>
-      <header className="header text-nowrap position-relative z-3 " dir="rtl">
-        <div className="container-fluid border-bottom ">
-          <div className="row all-head align-items-center justify-content-between flex-nowrap">
+      <header className="header text-nowrap position-relative z-3 w-100 px-sm-5  border-bottom" dir="rtl">
+        <div className="container-fluid ">
+          <div className=" all-head d-flex  align-items-center justify-content-between flex-nowrap container-fluid">
             {renderMobileMenu()}
             {renderLogo()}
             {!showSearch && (
-              <div className="col-8 d-none d-lg-flex header__nav center">
+              <div className="d-none d-md-flex header__nav ">
                 <nav className="header__menu lap-menu center">
                   <ul className="main-ul center  ">
                     <Links />
@@ -89,9 +89,9 @@ const Header = () => {
             )}
             {!showSearch && (
               <>
-                <div className={` col-3 col-sm-7 d-lg-none`}></div>
+                <div className={`  d-lg-none`}></div>
                 <div
-                  className="search-switch fs-4 col-1 btn "
+                  className="search-switch fs-4  btn "
                   title="icon_search"
                   onClick={() => setShowSearch(!showSearch)}
                 >
