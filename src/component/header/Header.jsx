@@ -24,7 +24,7 @@ const Header = () => {
 
   const renderMobileMenu = () => (
     <div
-      className=" d-md-none d-flex ps-0"
+      className={`${showSearch && "d-none "} d-md-none d-flex ps-0`}
       onClick={() => setShowMenu(!showMenu)}
     >
       <CgMenuGridR />
@@ -62,7 +62,7 @@ const Header = () => {
   );
 
   const renderLogin = () => (
-    <div className="">
+    <div className={`${showSearch && "d-none "}`}>
       <div className="header__right">
         <Link to="/" title="icon_profile" className="text-black">
           <CgProfile />
