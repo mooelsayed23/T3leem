@@ -10,7 +10,6 @@ import SearchComponent from "../Search.jsx/Search";
 import { Data } from "../DB/Data";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  console.log(showMenu);
   const [showSearch, setShowSearch] = useState(false);
   const outsideClickRef = useRef(null);
   const closeSearch = () => {
@@ -58,7 +57,7 @@ const Header = () => {
   );
 
   const renderLogin = () => (
-    <div className={`${showSearch && "d-none "}`}>
+    <div className={`${showSearch && "d-none "} `}>
       <div className="header__right">
         <Link to="/" title="icon_profile" className="text-black">
           <CgProfile />
@@ -109,11 +108,11 @@ const Header = () => {
           className="header__menu  d-lg-none nav-mobile d-flex justify-content-start border-start h-100 border-bottom  "
           dir="rtl"
         >
-          <ul>
+          <ul className="z-3 position-relative ">
             <Links />
           </ul>
           <div
-            className="position-fixed top-0  start-0 w-100 h-100 "
+            className="position-fixed top-0  start-0 w-100 h-100 z-2 "
             onClick={() => setShowMenu(!showMenu)}
           ></div>
         </nav>
