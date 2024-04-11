@@ -1,10 +1,10 @@
 .S-contener {
-    width: 89%; /* يجب أن تكون "S-contener" بدلاً من "S-contener" */
+    width: 89%; 
     background-image: url("./img/9.jpg");
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative; /* إضافة خاصية position لـ .S-contener لتمكين استخدام الوضع المطلق للكرات */
+    position: relative; 
     overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
     right: -100px;
     width: 200px;
     height: 200px;
-    opacity: 0.2; /* يجب أن يكون 0.2 بدلاً من 20% لتحديد الشفافية بشكل صحيح */
+    opacity: 0.2; 
     background-color: #fffb00;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -27,7 +27,7 @@
     right: -300px;
     width: 600px;
     height: 600px;
-    opacity: 0.2; /* يجب أن يكون 0.2 بدلاً من 20% لتحديد الشفافية بشكل صحيح */
+    opacity: 0.2; 
     background-color: #fffb00;
     border-radius: 50%;
     transition: all 0.3s ease;
