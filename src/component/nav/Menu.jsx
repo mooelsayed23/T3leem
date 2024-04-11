@@ -12,21 +12,20 @@ const Menu = () => {
 
   return (
     
-      <div className="links position-relative z-2 mx-auto ">
-        <ul className="d-flex gap-4 text-nowrap flex-nowrap overflow-x-auto py-3 px-3 px-lg-1   ">
+      
+        <ul>
           {menuItems.map((item) => (
             <li key={item.id}>
               <Link
                 to={`path/${item.title}`}
                 title={item.title}
-                className="text-color"
+                className="text-color text-nowrap "
               >
                 {item.title}
               </Link>
             </li>
           ))}
         </ul>
-      </div>
     
   );
 };

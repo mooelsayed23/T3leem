@@ -1,4 +1,11 @@
-.links{
-    width: 89%;
-    
+.links {
+    width: 89%;    
+}
+.links ul{
+    display: flex;   
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    padding: 20px 5px !important;
 }

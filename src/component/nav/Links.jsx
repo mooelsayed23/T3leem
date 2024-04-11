@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaCaretDown } from "react-icons/fa";
 import Menu from "./Menu";
+import"./Links.css";
 import { Link } from "react-router-dom";
 import useOutsideClick from "../script/OutsideClick";
 function Links() {
@@ -18,7 +19,7 @@ function Links() {
           الرئيسية
         </Link>
       </li>
-      <li className="position-relative" ref={menuRef}>
+      <li className="header-links position-relative " ref={menuRef}>
         <div
           title="اختر مسار"
           className="s-link border-0 text-center"

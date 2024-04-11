@@ -18,7 +18,9 @@ function App() {
   return (
     <>
       <Header />
+      <div className="links z-2 mx-auto ">
       <Menu />
+      </div>
       <Routes>
         <Route
           path="/"
