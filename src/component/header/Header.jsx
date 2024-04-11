@@ -24,7 +24,7 @@ const Header = () => {
 
   const renderMobileMenu = () => (
     <div
-      className=" d-lg-none d-flex ps-0"
+      className=" d-md-none d-flex ps-0"
       onClick={() => setShowMenu(!showMenu)}
     >
       <CgMenuGridR />
