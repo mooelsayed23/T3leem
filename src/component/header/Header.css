@@ -323,7 +323,7 @@ ul li:hover a:hover {
     position: absolute;
     z-index: 3;
     background-color: #FFF;
-    width: 156px;
+    width: 200px;
 }
 
 .nav-mobile ul li ul {

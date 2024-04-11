@@ -10,17 +10,13 @@ import SearchComponent from "../Search.jsx/Search";
 import { Data } from "../DB/Data";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  console.log(showMenu);
   const [showSearch, setShowSearch] = useState(false);
   const outsideClickRef = useRef(null);
-  const outsideClickRef2 = useRef(null);
   const closeSearch = () => {
     setShowSearch(false);
   };
-  const closeMenu = () => {
-    setShowMenu(!showMenu);
-  };
   useOutsideClick(outsideClickRef, closeSearch);
-  useOutsideClick(outsideClickRef2, closeMenu);
 
   const renderMobileMenu = () => (
     <div
@@ -73,7 +69,10 @@ const Header = () => {
 
   return (
     <>
-      <header className="header text-nowrap position-relative z-3 w-100 px-sm-5  border-bottom" dir="rtl">
+      <header
+        className="header text-nowrap position-relative z-3 w-100 px-sm-5  border-bottom"
+        dir="rtl"
+      >
         <div className="container-fluid ">
           <div className=" all-head d-flex  align-items-center justify-content-between flex-nowrap px-1">
             {renderMobileMenu()}
@@ -109,11 +108,14 @@ const Header = () => {
         <nav
           className="header__menu  d-lg-none nav-mobile d-flex justify-content-start border-start h-100 border-bottom  "
           dir="rtl"
-          ref={outsideClickRef2}
         >
           <ul>
             <Links />
           </ul>
+          <div
+            className="position-fixed top-0  start-0 w-100 h-100 "
+            onClick={() => setShowMenu(!showMenu)}
+          ></div>
         </nav>
       )}
     </>
