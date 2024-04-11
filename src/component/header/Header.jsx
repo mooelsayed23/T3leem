@@ -29,7 +29,7 @@ const Header = () => {
   const renderLogo = () => (
     <div className={` ${showSearch && "d-none d-md-block"}`}>
       <div className="header__logo">
-        <Link to="/" title="تَقدم التعليمية" className="text-center">
+        <Link to="/" title="تَقدم التعليمية" className="text-center mx-2 ">
           تَقدم التعليمية
         </Link>
       </div>
@@ -38,7 +38,7 @@ const Header = () => {
 
   const renderSearchForm = () => (
     <div
-      className=" d-flex align-items-center home-search position-relative m-0 px-0"
+      className=" d-flex w-100  align-items-center home-search position-relative m-0 px-0"
       ref={outsideClickRef}
     >
       <form action="" className="d-flex w-100">
