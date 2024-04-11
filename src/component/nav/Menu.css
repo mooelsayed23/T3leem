@@ -2,8 +2,7 @@
     width: 89%;    
 }
 .links ul{
-    display: flex;   
-    gap: 20px;
+    display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
     text-wrap: nowrap;

@@ -19,7 +19,7 @@ const Menu = () => {
               <Link
                 to={`path/${item.title}`}
                 title={item.title}
-                className="text-color text-nowrap "
+                className="text-color text-nowrap p-3 "
               >
                 {item.title}
               </Link>
